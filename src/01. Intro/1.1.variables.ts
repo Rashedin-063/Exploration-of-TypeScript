@@ -14,16 +14,16 @@ isAwesome = false;
 
 // isAwesome = 'shakeAndBake'
 
-// console.log(amount, isAwesome)
+console.log(amount, isAwesome)
 
 // challenge
 const stringVar: string = 'string variable'
 
-// console.log(stringVar.toLocaleUpperCase())
+console.log(stringVar.toLocaleUpperCase())
 
 const numVar: number = 12.3454343434
 
-// console.log(numVar.toFixed(2))
+console.log(numVar.toFixed(2))
 
 let boolVar: boolean = false;
 
