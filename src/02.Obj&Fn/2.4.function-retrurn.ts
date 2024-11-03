@@ -14,3 +14,19 @@ function calculateDiscount2(price: number): void {
 const finalPrice = calculateDiscount(200);
 
 console.log(finalPrice);
+
+
+function addThree(number: any) {
+  let anotherNumber: number = 3;
+
+  return number + anotherNumber;
+}
+
+const result = addThree(3);
+
+const someValue = result;
+
+// someValue.myMethod()
+
+console.log(result);
+
