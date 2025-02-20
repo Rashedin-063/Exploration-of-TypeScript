@@ -36,3 +36,5 @@ const genericString: GenericInterface<string> = {
     return this.value;
   },
 };
+
+
