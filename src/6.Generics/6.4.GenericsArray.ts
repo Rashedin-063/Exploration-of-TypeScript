@@ -13,7 +13,7 @@ console.log(generateStringArray(3, 'hello'));
 //   return result;
 // }
 
-function createArray<T>(lenght: number, value: T): Array<T>{
+function createArray<T>(length: number, value: T): Array<T>{
   let result: T[] = [];
   result = Array(length).fill(value);
   return result;
