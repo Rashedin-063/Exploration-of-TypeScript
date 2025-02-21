@@ -17,20 +17,37 @@ type Task = {
 
 const tasks: Task[] = []
 
-function createTask(event: SubmitEvent) {
+
+taskForm?.addEventListener('submit', (event) => {
   event.preventDefault();
   const taskDescription = formInput?.value;
   if (taskDescription) {
+
+    const task: Task = {
+      description: taskDescription,
+      isCompleted: false,
+    }
+
+    addTask(task);
+
     // add task to list
+
+
     // render tasks
+
+
     // update local storage
 
     formInput.value = '';
     return;
   }
   alert('Please enter a task description');
-}
+});
 
-taskForm?.addEventListener('submit', createTask);
+function addTask(task: Task): void {
+  tasks.push(task)
+  console.log(task)
+  
+}
 
 
