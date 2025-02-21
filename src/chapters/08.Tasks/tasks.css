@@ -218,6 +218,10 @@ main h2 {
   border-bottom-right-radius: var(--border-radius);
 }
 
+.list{
+  width: 300px;
+}
+
 .list li {
   display: flex;
   justify-content: space-between;
