@@ -17,7 +17,7 @@ type Task = {
 
 const tasks: Task[] = []
 
-taskForm?.addEventListener('submit', (event) => {
+function createTask(event: SubmitEvent) {
   event.preventDefault();
   const taskDescription = formInput?.value;
   if (taskDescription) {
@@ -29,6 +29,8 @@ taskForm?.addEventListener('submit', (event) => {
     return;
   }
   alert('Please enter a task description');
-});
+}
+
+taskForm?.addEventListener('submit', createTask);
 
 
