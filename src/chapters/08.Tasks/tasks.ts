@@ -28,13 +28,13 @@ taskForm?.addEventListener('submit', (event) => {
       isCompleted: false,
     }
 
-    addTask(task);
+    
 
     // add task to list
-
+addTask(task);
 
     // render tasks
-
+renderTask(task)
 
     // update local storage
 
@@ -50,4 +50,9 @@ function addTask(task: Task): void {
   
 }
 
-
+function renderTask(task: Task): void{
+  const taskElement = document.createElement('li');
+  taskElement.textContent = `${task.description} - ${task.isCompleted ? 'Completed' : 'Not Completed'}`;
+  
+  taskListElement?.appendChild(taskElement);
+}
