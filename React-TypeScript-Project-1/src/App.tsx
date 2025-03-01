@@ -1,4 +1,4 @@
-import Component from './starter/05-challenge'
+import Component from './starter/06-context'
 
 
 // const child = <>
@@ -8,9 +8,7 @@ import Component from './starter/05-challenge'
 function App() {
   return (
     <main>
-      <h2>React & TypeScript</h2>
-     <Component type='basic' name='advanced' />
-      <Component type='advanced' name='anna' email='ann@gmail.com' /> 
+    <Component/>
     </main>
   );
 }
