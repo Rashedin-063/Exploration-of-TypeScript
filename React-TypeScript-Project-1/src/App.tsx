@@ -1,4 +1,4 @@
-import Component from './starter/02-props'
+import Component from './starter/03-state'
 
 
 const child = <>
@@ -8,7 +8,7 @@ const child = <>
 function App() {
   return (
     <main>
-      <Component name='peter' id={123} children={child} />
+      <Component />
     </main>
   );
 }
