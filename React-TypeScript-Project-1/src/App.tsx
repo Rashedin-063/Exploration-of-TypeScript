@@ -1,9 +1,9 @@
-import Component from './starter/03-state'
+import Component from './starter/04-events'
 
 
-const child = <>
-<p>This is a children</p>
-</>
+// const child = <>
+// <p>This is a children</p>
+// </>
 
 function App() {
   return (
