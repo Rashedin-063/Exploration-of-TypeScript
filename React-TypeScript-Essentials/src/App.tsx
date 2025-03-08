@@ -1,3 +1,4 @@
+
 import Component from './starter/06-context'
 
 
@@ -5,7 +6,10 @@ import Component from './starter/06-context'
 // <p>This is a children</p>
 // </>  
 
+
 function App() {
+
+
   return (
     <main>
     <Component/>
