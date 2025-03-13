@@ -6,7 +6,7 @@ type CounterProps = {
 };
 
 
-const Counter = ({setCount, children}: CounterProps) => {
+const Counter2 = ({setCount, children}: CounterProps) => {
  
   return (
     <div>
@@ -44,4 +44,4 @@ const Counter = ({setCount, children}: CounterProps) => {
     </div>
   );
 }
-export default Counter
+export default Counter2

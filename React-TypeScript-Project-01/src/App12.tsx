@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Counter from "./components/Counter"
+import Counter from "./components/Counter2"
 import Heading from "./components/Heading"
 import Section from "./components/Section"
 import List from "./components/List";

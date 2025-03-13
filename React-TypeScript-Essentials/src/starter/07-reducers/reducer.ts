@@ -30,7 +30,6 @@ switch (action.type) {
     return {...state, count: 0}
   case 'setStatus':
     return {...state, status: action.payload}
-
   default:
    return state;
 }

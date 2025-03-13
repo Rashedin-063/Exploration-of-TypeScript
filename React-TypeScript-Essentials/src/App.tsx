@@ -1,11 +1,11 @@
 
-import Component from './starter/07-reducers/index'
+import Component from './starter/08-fetch-data/index'
 
 
 // const child = <>
 // <p>This is a children</p>
 // </>  
-
+ 
 
 function App() {
 
