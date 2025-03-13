@@ -22,14 +22,14 @@ function Component() {
       </div>
       <div className='btn-container'>
         <button
-          onClick={() => console.log('set status to active')}
+          onClick={() => dispatch({type: 'setStatus', payload: 'active'})}
           className='btn'
         >
           Set Status to Active
         </button>
         <button
           className='btn'
-          onClick={() => console.log('set status to inactive')}
+          onClick={() => dispatch({type: 'setStatus', payload: 'inactive'})}
         >
           Set Status to Inactive
         </button>
