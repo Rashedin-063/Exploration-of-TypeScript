@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 
-type Theme = 'light' | 'dark' | 'system'
+type Theme = 'light' | 'dark'
 
 type ThemeProviderState = {
   theme: Theme;
@@ -15,7 +15,7 @@ type ThemeProviderProps = {
 const ThemeProviderContext = createContext<ThemeProviderState | undefined>(undefined)
 
 
-export function ThemeProvider({ children, defaultTheme = 'system' }: ThemeProviderProps) {
+export function ThemeProvider({ children, defaultTheme = 'dark' }: ThemeProviderProps) {
 
   const [theme, setTheme] = useState<Theme>(defaultTheme)
 

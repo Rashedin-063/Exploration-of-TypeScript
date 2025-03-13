@@ -26,8 +26,6 @@ function Component() {
         backgroundColor:
           context.theme === 'dark'
             ? '#ccc'
-            : context.theme === 'light'
-            ? '#F6F6F6'
             : '#FBFBE6',
       }}
     >
@@ -37,13 +35,16 @@ function Component() {
       </div>
 
       <button
-        style={{
-          padding: '8px 24px',
-          borderRadius: '4px',
-          backgroundColor: '#0000ff',
-          color: '#fff',
-          cursor: 'pointer',
+        onClick={() => {
+          if (context.theme === 'dark') {
+            context.setTheme('light');
+            return;
+          } else if (context.theme === 'light') { 
+            context.setTheme('dark');
+            return;
+          } 
         }}
+       className='btn btn-center'
       >
         Toggle Theme
       </button>
