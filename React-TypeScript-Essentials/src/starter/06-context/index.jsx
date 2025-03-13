@@ -1,6 +1,4 @@
-import { ThemeProvider, useTheme } from "./context";
-
-
+import { ThemeProvider, useTheme } from './basic-context';
 
 function ParentComponent() {
   // return
@@ -9,15 +7,12 @@ function ParentComponent() {
     <ThemeProvider>
       <Component />
     </ThemeProvider>
-  )
- 
+  );
 }
 
 function Component() {
-
-  const context = useTheme()
+  const context = useTheme();
   console.log('hello context', context);
-  
 
   return (
     <div>

@@ -1,5 +1,5 @@
 
-import Component from './starter/06-context'
+import Component from './starter/06-context/basic-index'
 
 
 // const child = <>
