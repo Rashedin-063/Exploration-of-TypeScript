@@ -1,5 +1,5 @@
 
-import Component from './starter/06-context/index'
+import Component from './starter/07-reducers/index'
 
 
 // const child = <>
