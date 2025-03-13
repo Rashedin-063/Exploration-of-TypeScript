@@ -2,9 +2,21 @@ import { ThemeProvider, useTheme } from "./context";
 
 
 
+function ParentComponent() {
+  // return
+  //   <Component/>
+  return (
+    <ThemeProvider>
+      <Component />
+    </ThemeProvider>
+  )
+ 
+}
 
 function Component() {
 
+  const context = useTheme()
+  console.log('hello context', context);
   
 
   return (
@@ -15,4 +27,4 @@ function Component() {
   );
 }
 
-export default Component;
+export default ParentComponent;
