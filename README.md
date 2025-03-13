@@ -2,6 +2,5 @@
 
 ### Youtube Tutorials I have followed -
 
-- Practical TypeScript (Coding Addict)
-- Complete TypeScript Tutorial (Dave Gray)
+- Practical TypeScript ('John Smilga', Coding Addict)
 
