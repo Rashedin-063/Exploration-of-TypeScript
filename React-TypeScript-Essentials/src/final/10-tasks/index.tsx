@@ -13,6 +13,7 @@ function updateStorage(tasks: Task[]): void {
 }
 
 function Component() {
+  // const [tasks, setTasks] = useState<Task[]>(() => loadTasks());
   const [tasks, setTasks] = useState<Task[]>(() => loadTasks());
 
   const addTask = (task: Task): void => {
