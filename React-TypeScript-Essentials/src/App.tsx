@@ -1,5 +1,5 @@
 
-import Component from './starter/09-rtk/index'
+import Component from './starter/10-tasks/index'
 
 
 // const child = <>
