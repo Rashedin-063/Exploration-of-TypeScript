@@ -1,5 +1,4 @@
-
-import Component from './starter/10-tasks/index'
+// import Component from './starter/10-tasks/index'
 
 
 // const child = <>
@@ -12,7 +11,8 @@ function App() {
 
   return (
     <main>
-    <Component/>
+      {/* <Component/> */}
+      <h3>John Smilga's Huge TypeScript Tutorial Completed! Congratulations</h3>
     </main>
   );
 }
