@@ -10,7 +10,7 @@ type CounterState = {
 }
 
 const initialState: CounterState = {
-  count: 0,
+  count: 6,
   status: 'pending...'
 }
 
