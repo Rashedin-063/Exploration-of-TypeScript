@@ -1,11 +1,33 @@
 import { FormEvent, useState } from "react";
+import { Task } from "./types";
 
-const Form = () => {
+type FormProps = {
+  addTask: (task: Task) => void;
+}
+
+const Form = ({addTask}: FormProps) => {
 
   const [text, setText] = useState('')
 
-  const handleSubmit = (e: FormEvent) => { 
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => { 
     e.preventDefault()
+    if (!text) {
+      alert('Please enter a task')
+      return 
+    }
+
+ 
+    // add task to list
+       addTask({
+         id: new Date().getTime().toString(),
+         description: text,
+         isCompleted: false,
+       });
+  
+
+    
+    
+    setText('')
   }
 
   return (
